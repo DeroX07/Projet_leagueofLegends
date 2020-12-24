@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap core CSS -->
+    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">League Of Legends European Championship</h1>
+                <p class="lead text-muted">Site d'information du championnat, des équipes et évolution du classement en fonction des résultats de celles-ci.</p>
+                <p>
+                    <a class="btn btn-secondary my-2">@Html.ActionLink("Resultats", "Index", "Resultat")</a>
+                </p>
+            </div>
+        </section>
+    </header>
+
+    <main role="main">
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="/Content/Picture/image_accueil/lecatworlds.jpg" alt="LEC Worlds" />
+                        <div class="card-body">
+                            <p class="card-text">G2 Esports et Fnatic sont respectivement seed 1 et 2 et représenteront l'Europe au championnat du monde de League of Legends face aux Chinois,Coréen,...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="/Content/Picture/image_accueil/g2trophy.jpg" alt="G2 Trophy" />
+                        <div class="card-body">
+                            <p class="card-text">La team G2 Esports remporte ce split dans les playoffs par une somptueuse victoire 3-0 contre Fnatic.Ils remportent donc le titre et sont seed 1 de la LEC.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="/Content/Picture/image_accueil/g2flag.jpg" alt="G2 Flag" />
+                        <div class="card-body">
+                            <p class="card-text">Le père de Caps,midlaner de G2 Esports et tous les supporters de G2 sont derrière leur equipe dans cette revanche contre Mad Lions en demi finale des playoffs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br /><br /><br /><br /><br /><br />
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../../../dist/js/bootstrap.min.js"></script>
+    <script src="../../../../assets/js/vendor/holder.min.js"></script>
+    <script src="Content/js_file.js"></script>
+</body>
+</html>

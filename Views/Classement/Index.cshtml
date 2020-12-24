@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Projet_LeagueofLegends.Models.Classement>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2> Classement </h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ClassementID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.equipe.TeamName)
+        </th>
+        <th>
+            Joués
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.equipe.Nbrematchgagné)
+        </th>
+        <th>
+            Defaite(s)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ClassementID)
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.equipe.TeamName)
+            </td>
+            <td>
+                18
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.equipe.Nbrematchgagné)
+            </td>
+            <td>
+                18 - @Html.DisplayFor(modelItem => item.equipe.Nbrematchgagné)
+            </td>
+
+        </tr>
+    }
+
+</table>
